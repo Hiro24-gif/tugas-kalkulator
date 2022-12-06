@@ -1,14 +1,15 @@
 var wow = require('readline-sync');
-let bill1 =wow.questionInt('input bilangan pertama ')
+
+
 console.log('--------------------');
 console.log('+ = tambah')
 console.log('- = kurang')
 console.log('x = kali')
-console.log('% = bagi')
+console.log('/ = bagi')
 console.log('--------------------');
 let metod = wow.question('pilih metode ')
+var bill1 = wow.questionInt('input bilangan pertama ')
 let bill2 = wow.questionInt('input bilangan kedua ')
-
 if (metod == '+') {
     console.log(bill1 + bill2)
 } else {
@@ -18,10 +19,12 @@ if (metod == '+') {
         if (metod == 'x') {
             console.log(bill1 * bill2)
         } else {
-            if (metod == '%') {
+            if (metod == '/') {
                 console.log(bill1 / bill2)
             } else {
                 console.log('masukan metode yang benar')
+
+
             }
         }
 
